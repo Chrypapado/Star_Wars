@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="The Star Wars Wikia Social Graph">
+<meta itemprop="description" content="Download the data related to the Wikia from here
+The universe of Star Wars has expanded a lot, with not only movies and TV series, but also with a large set of comic books. Having all these information is really hard to comprehend. The first movie came out in 1977 and the universe is expanding up until now, with the first six episodes having the biggest impact. So, we decided to explore Star Wars a little bit more and especially the six episodes and with the help of visualizations and data analysis to understand it better."><meta itemprop="datePublished" content="2021-12-03T16:59:39-04:00" />
+<meta itemprop="dateModified" content="2021-12-03T16:59:39-04:00" />
+<meta itemprop="wordCount" content="928">
+<meta itemprop="keywords" content="" /><meta property="og:title" content="The Star Wars Wikia Social Graph" />
+<meta property="og:description" content="Download the data related to the Wikia from here
+The universe of Star Wars has expanded a lot, with not only movies and TV series, but also with a large set of comic books. Having all these information is really hard to comprehend. The first movie came out in 1977 and the universe is expanding up until now, with the first six episodes having the biggest impact. So, we decided to explore Star Wars a little bit more and especially the six episodes and with the help of visualizations and data analysis to understand it better." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrypapado.github.io/Star_Wars/wikia/" /><meta property="article:section" content="" />
+<meta property="article:published_time" content="2021-12-03T16:59:39-04:00" />
+<meta property="article:modified_time" content="2021-12-03T16:59:39-04:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The Star Wars Wikia Social Graph"/>
+<meta name="twitter:description" content="Download the data related to the Wikia from here
+The universe of Star Wars has expanded a lot, with not only movies and TV series, but also with a large set of comic books. Having all these information is really hard to comprehend. The first movie came out in 1977 and the universe is expanding up until now, with the first six episodes having the biggest impact. So, we decided to explore Star Wars a little bit more and especially the six episodes and with the help of visualizations and data analysis to understand it better."/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="https://chrypapado.github.io/Star_Wars/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://chrypapado.github.io/Star_Wars/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://chrypapado.github.io/Star_Wars/favicon-16x16.png">
+	<link rel="manifest" href="https://chrypapado.github.io/Star_Wars/site.webmanifest">
+	<link rel="mask-icon" href="https://chrypapado.github.io/Star_Wars/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="https://chrypapado.github.io/Star_Wars/favicon.ico">
+
+	<title>The Star Wars Wikia Social Graph</title>
+	<link rel="stylesheet" href="https://chrypapado.github.io/Star_Wars/css/style.min.f74778e3020c87c304fb5982e09b92ba63a5c7f202996d4c7283d6057acfe9c1.css" integrity="sha256-90d44wIMh8ME+1mC4JuSumOlx/ICmW1McoPWBXrP6cE=" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="https://chrypapado.github.io/css/accordion.css">
+	<link rel="stylesheet" href="https://chrypapado.github.io/css/collapsible.css">
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://chrypapado.github.io/Star_Wars/">Star Wars: The Final Project</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://chrypapado.github.io/Star_Wars/wikia/">Wikia Data Source</a>
+				<a href="https://chrypapado.github.io/Star_Wars/scripts/">Networks Based on Movie Scripts</a>
+				<a href="https://chrypapado.github.io/Star_Wars/episodes/">Episodes</a>
+				<a href="https://chrypapado.github.io/episodes/">Episodes</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://github.com/Chrypapado/An_analysis_of_the_Star_Wars_universe" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a><a href="https://www.youtube.com/watch?v=0QLFTrSzWdM&amp;ab_channel=%CE%A7%CF%81%CF%85%CF%83%CF%8C%CF%83%CF%84%CE%BF%CE%BC%CE%BF%CF%82%CE%A0%CE%B1%CF%80%CE%B1%CE%B4%CF%8C%CF%80%CE%BF%CF%85%CE%BB%CE%BF%CF%82" target="_blank" rel="noopener me" title="Youtube"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://chrypapado.github.io/Star_Wars/wikia/">Wikia Data Source</a></li>
+			<li><a href="https://chrypapado.github.io/Star_Wars/scripts/">Networks Based on Movie Scripts</a></li>
+			<li><a href="https://chrypapado.github.io/Star_Wars/episodes/">Episodes</a></li>
+			<li><a href="https://chrypapado.github.io/episodes/">Episodes</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner thin animated fadeIn faster">
+		<h1>The Star Wars Wikia Social Graph</h1>
+		<div class="content">
+			<p>Download the data related to the Wikia from <a href="data.zip">here</a></p>
+<p>The universe of Star Wars has expanded a lot, with not only movies and TV series, but also with a large set of comic books. Having all these information is really hard to comprehend. The first movie came out in 1977 and the universe is expanding up until now, with the first six episodes having the biggest impact. So, we decided to explore Star Wars a little bit more and especially the six episodes and with the help of visualizations and data analysis to understand it better.</p>
+<h2 id="wikias-data-source">Wikia&rsquo;s Data Source<a href="#wikias-data-source" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>The first thing we did, was to try to get a better overview about the Star Wars universe. We tried to understand how big it is and the correlation between all these movies and comics. So we extracted the information that was available to us from the Star Wars Wiki data source. As you can see from the graph below, the universe is huge with 449 communities calculated by the Louvain method. There are at least 4001 nodes with 12706 edges between them. It is also really easy to distinguish the two big clusters. Our first thought was that the two clusters would represent the two trilogies (Episodes I, II and III with Episodes IV, V and VI), but actually after a little investigation, we found out that the first cluster represents Episodes I-VI and the other cluster all the events that took place after.</p>
+<p><img src="images/Big_Network.png" alt="The Big Network"></p>
+<p>However, even thought both clusters seemed pretty big, the one created by the first six episodes had a much bigger impact and it can be validated from then in and out degree connections</p>
+<table>
+<thead>
+<tr>
+<th>In Degree Connections</th>
+<th></th>
+<th>Out Degree Connections</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Leia Organa Solo</td>
+<td>246</td>
+<td>Darth Caedus</td>
+<td>92</td>
+</tr>
+<tr>
+<td>Anakin Skywalker</td>
+<td>147</td>
+<td>Anakin Skywalker</td>
+<td>87</td>
+</tr>
+<tr>
+<td>Darth Sidious</td>
+<td>127</td>
+<td>Corran Horn</td>
+<td>81</td>
+</tr>
+<tr>
+<td>Leia Skywalker Organa Solo</td>
+<td>104</td>
+<td>Leia Skywalker Organa Solo</td>
+<td>79</td>
+</tr>
+<tr>
+<td>Han Solo</td>
+<td>100</td>
+<td>Jaina Solo Fel</td>
+<td>65</td>
+</tr>
+<tr>
+<td>Luke Skywalker</td>
+<td>99</td>
+<td>Leia Organa Solo</td>
+<td>62</td>
+</tr>
+<tr>
+<td>Darth Caedus</td>
+<td>90</td>
+<td>Tycho Celchu</td>
+<td>56</td>
+</tr>
+<tr>
+<td>Mara Jade Skywalker</td>
+<td>80</td>
+<td>Luke Skywalker</td>
+<td>55</td>
+</tr>
+<tr>
+<td>Obi-Wan Kenobi</td>
+<td>74</td>
+<td>Obi-Wan Kenobi</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Corran Horn</td>
+<td>68</td>
+<td>Ezra Bridger</td>
+<td>50</td>
+</tr>
+</tbody>
+</table>
+<p>Moreover, from the nodes with the highest degree centrality of the network.</p>
+<table>
+<thead>
+<tr>
+<th>Character</th>
+<th>Degree Centrality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Leia Organa Solo</td>
+<td>0.064</td>
+</tr>
+<tr>
+<td>Anakin Skywalker</td>
+<td>0.039</td>
+</tr>
+<tr>
+<td>Darth Sidious</td>
+<td>0.033</td>
+</tr>
+<tr>
+<td>Leia Skywalker Organa Solo</td>
+<td>0.03075</td>
+</tr>
+<tr>
+<td>Darth Caedus</td>
+<td>0.03025</td>
+</tr>
+</tbody>
+</table>
+<p>Leia Organa Solo is a different page in Wikia source, that describes Leia from the new movies and episodes.</p>
+<h2 id="characters-related-to-the-six-episodes">Characters Related to the Six Episodes<a href="#characters-related-to-the-six-episodes" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>The next step was to filter out all that chaos and concentrate to the characters that appeared to any of the six episodes, as we wanted to better understand the connections behind our main characters. So we got a completely different network with 218 nodes, 1128 edges between them and 27 communities in total.</p>
+<p><img src="images/Small_Network.png" alt="The Small Network"></p>
+<p>Furthermore, the results from the degree connections and centrality, validate the results, without giving any significant informations.</p>
+<table>
+<thead>
+<tr>
+<th>In Degree Connections</th>
+<th></th>
+<th>Out Degree Connections</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anakin Skywalker</td>
+<td>71</td>
+<td>Anakin Skywalker</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Luke Skywalker</td>
+<td>64</td>
+<td>Luke Skywalker</td>
+<td>39</td>
+</tr>
+<tr>
+<td>Han Solo</td>
+<td>51</td>
+<td>Leia Skywalker Organa Solo</td>
+<td>31</td>
+</tr>
+<tr>
+<td>Darth Sidious</td>
+<td>46</td>
+<td>Obi-Wan Kenobi</td>
+<td>29</td>
+</tr>
+<tr>
+<td>Leia Skywalker Organa Solo</td>
+<td>45</td>
+<td>R2-D2</td>
+<td>28</td>
+</tr>
+</tbody>
+</table>
+<p>By eliminating all the characters outside the first six episodes, it is obvious that Han Solo seems a more important character with Darth Sidious becoming less popular. Also, the absence of Obi-Wan and Yoda is worth mentioning, as they appear to be characters with a big influence in the movies.</p>
+<table>
+<thead>
+<tr>
+<th>Character</th>
+<th>Degree Centrality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anakin Skywalker</td>
+<td>0.35023</td>
+</tr>
+<tr>
+<td>Luke Skywalker</td>
+<td>0.29953</td>
+</tr>
+<tr>
+<td>Han Solo</td>
+<td>0.24423</td>
+</tr>
+<tr>
+<td>Leia Skywalker Organa Solo</td>
+<td>0.23502</td>
+</tr>
+<tr>
+<td>Darth Sidious</td>
+<td>0.23041</td>
+</tr>
+</tbody>
+</table>
+<h3 id="communities">Communities<a href="#communities" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>Then we explored the communities a little bit further and created a barplot with the size of every community named after the most connected node.</p>
+<p><img src="images/Dist_Community_Small_Network.png" alt="Barplot Community"></p>
+<p>The results were as expected with many unknown characters creating a solely community and our main protagonists creating some big ones.</p>
+<h3 id="sentiment-analysis">Sentiment Analysis<a href="#sentiment-analysis" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>The last task that we explored regarding the information we extracted from the Wiki data source was a sentiment analysis of everyone&rsquo;s Wiki page. As there were many nodes and many of them represented many unknown characters we decided to remove nodes with a in-degree less than 10 so we could extract the most happiest and saddest characters from a more important batch of choices. We used the LabMT and Vader method to calculate these information from our characters.</p>
+<table>
+<thead>
+<tr>
+<th>Happiest Character</th>
+<th>LabMT</th>
+<th>Saddest Character</th>
+<th>LabMT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>J&rsquo;Quille</td>
+<td>4.1445</td>
+<td>Anakin Skywalker</td>
+<td>2.7013</td>
+</tr>
+<tr>
+<td>Shmi Skywalker Lars</td>
+<td>4.073</td>
+<td>Darth Sidious</td>
+<td>2.9862</td>
+</tr>
+<tr>
+<td>Beru Whitesun Lars</td>
+<td>4.0614</td>
+<td>Leia Skywalker Organa Solo</td>
+<td>3.0067</td>
+</tr>
+<tr>
+<td>Greedo</td>
+<td>3.9984</td>
+<td>Han Solo</td>
+<td>3.0729</td>
+</tr>
+<tr>
+<td>Carlist Rieekan</td>
+<td>3.9862</td>
+<td>Obi-Wan Kenobi</td>
+<td>3.0770</td>
+</tr>
+</tbody>
+</table>
+<p>The results using the LabMT method were both expected and shocking with Anakin Skywalker (which is also Darth Vader in the wiki source) to have the first place in the saddest characters and Darth Sidious the second one. Many characters that hadn&rsquo;t to do anything with the war had the highest places in the happiest section. However, many main protagonists which were considered good had hish places in the saddest section.</p>
+<table>
+<thead>
+<tr>
+<th>Happiest Character</th>
+<th>VADER</th>
+<th>Saddest Character</th>
+<th>VADER</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Carlist Rieekan</td>
+<td>0.008753</td>
+<td>Cornelius Evazan</td>
+<td>-0.0134107</td>
+</tr>
+<tr>
+<td>Maz Kanata</td>
+<td>0.004962</td>
+<td>Greedo</td>
+<td>-0.013154</td>
+</tr>
+<tr>
+<td>Nien Nunb</td>
+<td>0.003551</td>
+<td>Norra Wexley</td>
+<td>-0.012571</td>
+</tr>
+<tr>
+<td>Wedge Antilles</td>
+<td>0.001353</td>
+<td>Dooku</td>
+<td>-0.011735</td>
+</tr>
+<tr>
+<td>Shmi Skywalker Lars</td>
+<td>0.000148</td>
+<td>Dengar</td>
+<td>-0.011194</td>
+</tr>
+</tbody>
+</table>
+<p>The results regarding the VADER method seemed quite different, especially regarding the saddest characters where Greedo is the second most sad character in the VADER method, while being one of the happiest in the LabMT.</p>
+<p>Finally we computed the distribution of the sentiment analysis for all the characters regarding the six episodes, with the mean value both to LabMT and VADER being quite low.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">LabMT Distribution</th>
+<th style="text-align:center">VADER Distribution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><img src="images/Dist_LabMT_Small_Network.png" alt="LabMT"></td>
+<td style="text-align:center"><img src="images/Dist_VADER_Small_Network.png" alt="VADER"></td>
+</tr>
+</tbody>
+</table>
+
+		</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2021 <a href="https://chrypapado.github.io/Star_Wars/"></a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://chrypapado.github.io/Star_Wars/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://chrypapado.github.io/Star_Wars/js/bundle.min.7d8545daa55d62427355498dd8da13f98ff79a7938ce7d2a5e2ae1ec0de3beb8.js" integrity="sha256-fYVF2qVdYkJzVUmN2NoT+Y/3mnk4zn0qXirh7A3jvrg=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>
