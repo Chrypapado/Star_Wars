@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="The Star Wars Script Analysis">
+<meta itemprop="description" content="Download the data related to the scripts from here
+After exploring the Wikia data source, we wanted to compare our results with scripts of the movies. So after downloading and processing the scripts we were able to extract the information needed to do the necessary analysis. The goals were to see if the extracted data from movie scripts were similar to the ones with the Wikia data source. Furthermore, we wanted to explore how much were the movies changed, so we splitted the movies into two trilogies in order to compare them."><meta itemprop="datePublished" content="2021-12-03T16:59:39-04:00" />
+<meta itemprop="dateModified" content="2021-12-03T16:59:39-04:00" />
+<meta itemprop="wordCount" content="717">
+<meta itemprop="keywords" content="" /><meta property="og:title" content="The Star Wars Script Analysis" />
+<meta property="og:description" content="Download the data related to the scripts from here
+After exploring the Wikia data source, we wanted to compare our results with scripts of the movies. So after downloading and processing the scripts we were able to extract the information needed to do the necessary analysis. The goals were to see if the extracted data from movie scripts were similar to the ones with the Wikia data source. Furthermore, we wanted to explore how much were the movies changed, so we splitted the movies into two trilogies in order to compare them." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chrypapado.github.io/Star_Wars/scripts/" /><meta property="article:section" content="" />
+<meta property="article:published_time" content="2021-12-03T16:59:39-04:00" />
+<meta property="article:modified_time" content="2021-12-03T16:59:39-04:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The Star Wars Script Analysis"/>
+<meta name="twitter:description" content="Download the data related to the scripts from here
+After exploring the Wikia data source, we wanted to compare our results with scripts of the movies. So after downloading and processing the scripts we were able to extract the information needed to do the necessary analysis. The goals were to see if the extracted data from movie scripts were similar to the ones with the Wikia data source. Furthermore, we wanted to explore how much were the movies changed, so we splitted the movies into two trilogies in order to compare them."/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="https://chrypapado.github.io/Star_Wars/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://chrypapado.github.io/Star_Wars/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://chrypapado.github.io/Star_Wars/favicon-16x16.png">
+	<link rel="manifest" href="https://chrypapado.github.io/Star_Wars/site.webmanifest">
+	<link rel="mask-icon" href="https://chrypapado.github.io/Star_Wars/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="https://chrypapado.github.io/Star_Wars/favicon.ico">
+
+	<title>The Star Wars Script Analysis</title>
+	<link rel="stylesheet" href="https://chrypapado.github.io/Star_Wars/css/style.min.f74778e3020c87c304fb5982e09b92ba63a5c7f202996d4c7283d6057acfe9c1.css" integrity="sha256-90d44wIMh8ME+1mC4JuSumOlx/ICmW1McoPWBXrP6cE=" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="https://chrypapado.github.io/css/accordion.css">
+	<link rel="stylesheet" href="https://chrypapado.github.io/css/collapsible.css">
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://chrypapado.github.io/Star_Wars/">Star Wars: The Final Project</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://chrypapado.github.io/Star_Wars/wikia/">Wikia Data Source</a>
+				<a href="https://chrypapado.github.io/Star_Wars/scripts/">Networks Based on Movie Scripts</a>
+				<a href="https://chrypapado.github.io/Star_Wars/episodes/">Episodes</a>
+				<a href="https://chrypapado.github.io/episodes/">Episodes</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://github.com/Chrypapado/An_analysis_of_the_Star_Wars_universe" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a><a href="https://www.youtube.com/watch?v=0QLFTrSzWdM&amp;ab_channel=%CE%A7%CF%81%CF%85%CF%83%CF%8C%CF%83%CF%84%CE%BF%CE%BC%CE%BF%CF%82%CE%A0%CE%B1%CF%80%CE%B1%CE%B4%CF%8C%CF%80%CE%BF%CF%85%CE%BB%CE%BF%CF%82" target="_blank" rel="noopener me" title="Youtube"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://chrypapado.github.io/Star_Wars/wikia/">Wikia Data Source</a></li>
+			<li><a href="https://chrypapado.github.io/Star_Wars/scripts/">Networks Based on Movie Scripts</a></li>
+			<li><a href="https://chrypapado.github.io/Star_Wars/episodes/">Episodes</a></li>
+			<li><a href="https://chrypapado.github.io/episodes/">Episodes</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner thin animated fadeIn faster">
+		<h1>The Star Wars Script Analysis</h1>
+		<div class="content">
+			<p>Download the data related to the scripts from <a href="data.zip">here</a></p>
+<p>After exploring the Wikia data source, we wanted to compare our results with scripts of the movies. So after downloading and processing the scripts we were able to extract the information needed to do the necessary analysis. The goals were to see if the extracted data from movie scripts were similar to the ones with the Wikia data source. Furthermore, we wanted to explore how much were the movies changed, so we splitted the movies into two trilogies in order to compare them.</p>
+<h2 id="one-big-network">One big network<a href="#one-big-network" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>In order to work with the movie scripts and as we didn&rsquo;t had any data that would characterize someone individually, we splitted the movies into each scene and we created a network that would connect two nodes based on how many dialogues they had during the movie. As you can see from the graoh below, the bigger the line that connects two nodes, the more dialogues they had during the six movies.</p>
+<p><img src="images/All_Episodes.png" alt="Script Network"></p>
+<p>The two clusters here are pretty obvious in contrast with the Wikia&rsquo;s network. However, the network&rsquo;s attribute are pretty similar which consists of 223 nodes and 1404 edges, with the number of communities being 23. In the specific network both the in-degree and the out-degree connections are the same, as it is an undirected graph.</p>
+<table>
+<thead>
+<tr>
+<th>Degree Connections</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anakin Skywalker</td>
+<td>68</td>
+</tr>
+<tr>
+<td>Obi-Wan</td>
+<td>52</td>
+</tr>
+<tr>
+<td>C3PO</td>
+<td>51</td>
+</tr>
+<tr>
+<td>Luke Skywalker</td>
+<td>48</td>
+</tr>
+<tr>
+<td>Padme</td>
+<td>41</td>
+</tr>
+<tr>
+<td>Qui-Gon</td>
+<td>35</td>
+</tr>
+<tr>
+<td>Leia</td>
+<td>33</td>
+</tr>
+<tr>
+<td>Darth Vader</td>
+<td>32</td>
+</tr>
+<tr>
+<td>Han Solo</td>
+<td>32</td>
+</tr>
+<tr>
+<td>Jar Jar</td>
+<td>27</td>
+</tr>
+</tbody>
+</table>
+<p>As a result the degree centrality follows also the same order.</p>
+<table>
+<thead>
+<tr>
+<th>Character</th>
+<th>Degree Centrality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anakin Skywalker</td>
+<td>0.3063</td>
+</tr>
+<tr>
+<td>Obi-Wan</td>
+<td>0.2342</td>
+</tr>
+<tr>
+<td>C3PO</td>
+<td>0.2287</td>
+</tr>
+<tr>
+<td>Luke Skywalker</td>
+<td>0.2162</td>
+</tr>
+<tr>
+<td>Padme</td>
+<td>0.1846</td>
+</tr>
+</tbody>
+</table>
+<p>From these information, we can clearly see the biggest difference being Obi-Wan which is a vital character for the universe, but the results of the wikia page didn&rsquo;t show.</p>
+<h3 id="sentiment-analysis">Sentiment Analysis<a href="#sentiment-analysis" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>For the sentiment analysis we followed the exact same procedure, we removed all nodes that had a degree less than 10, in order to explore the hapiness and sadness of more important characters. So after filtering out those characters, the results that were based on the lines that character said during the movies are the following:</p>
+<table>
+<thead>
+<tr>
+<th>Happiest Character</th>
+<th>LabMT</th>
+<th>Saddest Character</th>
+<th>LabMT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KITSTER</td>
+<td>5.0817</td>
+<td>JAR JAR</td>
+<td>3.4410</td>
+</tr>
+<tr>
+<td>BIGGS</td>
+<td>4.6671</td>
+<td>THREEPIO</td>
+<td>3.5629</td>
+</tr>
+<tr>
+<td>MAS AMEDDA</td>
+<td>4.6463</td>
+<td>HAN</td>
+<td>3.5954</td>
+</tr>
+<tr>
+<td>BAIL ORGANA</td>
+<td>4.5737</td>
+<td>LUKE</td>
+<td>3.6284</td>
+</tr>
+<tr>
+<td>TARKIN</td>
+<td>4.5390</td>
+<td>ANAKIN</td>
+<td>3.63184</td>
+</tr>
+</tbody>
+</table>
+<p>The first thing that is easily observed is the difference between the scores of the LabMT. Here the values are higher resulting to happier characters. However, the pattern is the same. The more important the character the sadder he is.</p>
+<table>
+<thead>
+<tr>
+<th>Happiest Character</th>
+<th>VADER</th>
+<th>Saddest Character</th>
+<th>VADER</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KITSTER</td>
+<td>0.053906</td>
+<td>BAIL ORGANA</td>
+<td>-0.022283</td>
+</tr>
+<tr>
+<td>AMIDALA</td>
+<td>0.026763</td>
+<td>YODA</td>
+<td>-0.01147</td>
+</tr>
+<tr>
+<td>BIGGS</td>
+<td>0.017163</td>
+<td>LUKE</td>
+<td>-0.01023</td>
+</tr>
+<tr>
+<td>BAIL</td>
+<td>0.013782</td>
+<td>VADER</td>
+<td>-0.00953</td>
+</tr>
+<tr>
+<td>QUIGON</td>
+<td>0.012798</td>
+<td>OFFICER</td>
+<td>-0.00864</td>
+</tr>
+</tbody>
+</table>
+<p>Regarding the results from VADER, the range of values is similar to the wikia&rsquo;s and we can for sure validate that the most a character appears in a movie the lower his sentiment score gets, resulting to a universe of movies that is quite sad. This also can be observed during the movies, where the dark side influences a lot every character during the movies.</p>
+<p>Lastly the distribution for all the characters can be seen in the plots below, which is much more concentrated with many characters showing the same behaviour.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">LabMT Distribution</th>
+<th style="text-align:center">VADER Distribution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><img src="images/Dist_LabMT_All_Episodes.png" alt="LabMT"></td>
+<td style="text-align:center"><img src="images/Dist_VADER_All_Episodes.png" alt="VADER"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-two-trilogies">The Two Trilogies<a href="#the-two-trilogies" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>To proceed further we thought we should distinguish the two trilogies and find out the differences how the movies might have changed. Regarding the network, the trilogies seem to have many similarities.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Episodes I, II &amp; III</th>
+<th style="text-align:center">Episodes IV, V &amp; VI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Nodes: 115</td>
+<td style="text-align:center">Nodes: 120</td>
+</tr>
+<tr>
+<td style="text-align:center">Edges: 780</td>
+<td style="text-align:center">Edges: 630</td>
+</tr>
+<tr>
+<td style="text-align:center">Communities:10</td>
+<td style="text-align:center">Communities: 18</td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="images/First_Trilogy.png" alt="LabMT"></td>
+<td style="text-align:center"><img src="images/Second_Trilogy.png" alt="VADER"></td>
+</tr>
+</tbody>
+</table>
+<p>Our main focus though, was to concentrate on the sentiment analysis for the two movies. So we first started by calculating the sentiment of LabMT and VADER for the whole trilogies.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Episodes I, II &amp; III</th>
+<th style="text-align:center">Episodes IV, V &amp; VI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">LabMT:  2.86599</td>
+<td style="text-align:center">LabMT: 2.83683</td>
+</tr>
+<tr>
+<td style="text-align:center">VADER: -0.00301</td>
+<td style="text-align:center">VADER: -0.00733</td>
+</tr>
+</tbody>
+</table>
+<p>However, all the results are quite the same which was unexpected due to the many years between the movies. The sentiment is quite the same, with the only difference in the LabMT distribution between the two trilogies.</p>
+<table>
+<thead>
+<tr>
+<th>LabMT</th>
+</tr>
+</thead>
+</table>
+<table>
+<thead>
+<tr>
+<th>Episodes I, II &amp; III</th>
+<th>Episodes IV, V &amp; VI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="images/Dist_LabMT_First.png" alt="LabMT"></td>
+<td><img src="images/Dist_LabMT_Second.png" alt="LabMT"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>VADER</th>
+</tr>
+</thead>
+</table>
+<table>
+<thead>
+<tr>
+<th>Episodes I, II &amp; III</th>
+<th>Episodes IV, V &amp; VI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="images/Dist_VADER_First.png" alt="VADER"></td>
+<td><img src="images/Dist_VADER_Second.png" alt="VADER"></td>
+</tr>
+</tbody>
+</table>
+
+		</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2021 <a href="https://chrypapado.github.io/Star_Wars/"></a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://chrypapado.github.io/Star_Wars/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://chrypapado.github.io/Star_Wars/js/bundle.min.7d8545daa55d62427355498dd8da13f98ff79a7938ce7d2a5e2ae1ec0de3beb8.js" integrity="sha256-fYVF2qVdYkJzVUmN2NoT+Y/3mnk4zn0qXirh7A3jvrg=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>
