@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Star Wars: The Final Project</title>
+    <link>https://github.com/Chrypapado/Star_Wars/</link>
+    <description>Recent content on Star Wars: The Final Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 May 2005 19:44:00 +0000</lastBuildDate><atom:link href="https://github.com/Chrypapado/Star_Wars/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Star Wars Script Analysis</title>
+      <link>https://github.com/Chrypapado/Star_Wars/scripts/</link>
+      <pubDate>Fri, 03 Dec 2021 16:59:39 -0400</pubDate>
+      
+      <guid>https://github.com/Chrypapado/Star_Wars/scripts/</guid>
+      <description>Download the data related to the scripts from here
+After exploring the Wikia data source, we wanted to compare our results with scripts of the movies. So after downloading and processing the scripts we were able to extract the information needed to do the necessary analysis. The goals were to see if the extracted data from movie scripts were similar to the ones with the Wikia data source. Furthermore, we wanted to explore how much were the movies changed, so we splitted the movies into two trilogies in order to compare them.</description>
+    </item>
+    
+    <item>
+      <title>The Star Wars Wikia Social Graph</title>
+      <link>https://github.com/Chrypapado/Star_Wars/wikia/</link>
+      <pubDate>Fri, 03 Dec 2021 16:59:39 -0400</pubDate>
+      
+      <guid>https://github.com/Chrypapado/Star_Wars/wikia/</guid>
+      <description>Download the data related to the Wikia from here
+The universe of Star Wars has expanded a lot, with not only movies and TV series, but also with a large set of comic books. Having all these information is really hard to comprehend. The first movie came out in 1977 and the universe is expanding up until now, with the first six episodes having the biggest impact. So, we decided to explore Star Wars a little bit more and especially the six episodes and with the help of visualizations and data analysis to understand it better.</description>
+    </item>
+    
+    <item>
+      <title>Star Wars: Episode III - Revenge of the Sith</title>
+      <link>https://github.com/Chrypapado/Star_Wars/episodes/episode-iii/</link>
+      <pubDate>Sun, 15 May 2005 19:44:00 +0000</pubDate>
+      
+      <guid>https://github.com/Chrypapado/Star_Wars/episodes/episode-iii/</guid>
+      <description>A small summary behind the third episode, while extracting some funny and useful information that could provide useful to get a better insight for the Star Wars universe.
+The network The network for the first episode consists of 21 nodes, 92 edges while creating 4 communities.
+The degree connections and centrality for the network are the following:
+   Character Degree Connection Degree Centrality     ANAKIN 14 0.</description>
+    </item>
+    
+    <item>
+      <title>Star Wars: Episode II - Attack of the Clones</title>
+      <link>https://github.com/Chrypapado/Star_Wars/episodes/episode-ii/</link>
+      <pubDate>Sun, 12 May 2002 19:44:00 +0000</pubDate>
+      
+      <guid>https://github.com/Chrypapado/Star_Wars/episodes/episode-ii/</guid>
+      <description>A small summary behind the second episode, while extracting some funny and useful information that could provide useful to get a better insight for the Star Wars universe.
+The network The network for the second episode consists of 59 nodes, 330 edges while creating 5 communities.
+The degree connections and centrality for the network are the following:
+   Character Degree Connection Degree Centrality     OBIWAN 34 0.</description>
+    </item>
+    
+    <item>
+      <title>Star Wars: Episode I - The Phantom Menace</title>
+      <link>https://github.com/Chrypapado/Star_Wars/episodes/episode-i/</link>
+      <pubDate>Sun, 16 May 1999 23:21:28 -0400</pubDate>
+      
+      <guid>https://github.com/Chrypapado/Star_Wars/episodes/episode-i/</guid>
+      <description>A small summary behind the first episode, while extracting some funny and useful information that could provide useful to get a better insight for the Star Wars universe.
+The network The network for the first episode consists of 60 nodes, 422 edges while creating 6 communities. For this network, we decide to leave padme and amidala as two seperate persons, not only because amidala is being impersonated by two people but also to see the difference between them.</description>
+    </item>
+    
+    <item>
+      <title>Star Wars: Episode VI - Return of the Jedi</title>
+      <link>https://github.com/Chrypapado/Star_Wars/episodes/episode-vi/</link>
+      <pubDate>Wed, 25 May 1983 12:00:00 +0000</pubDate>
+      
+      <guid>https://github.com/Chrypapado/Star_Wars/episodes/episode-vi/</guid>
+      <description>A small summary behind the first episode, while extracting some funny and useful information that could provide useful to get a better insight for the Star Wars universe.
+The network The network for the first episode consists of 41 nodes, 200 edges while creating 7 communities.
+The degree connections and centrality for the network are the following:
+   Character Degree Connection Degree Centrality     LANDO 17 0.</description>
+    </item>
+    
+    <item>
+      <title>Star Wars: Episode V - The Empire Strikes Back</title>
+      <link>https://github.com/Chrypapado/Star_Wars/episodes/episode-v/</link>
+      <pubDate>Tue, 06 May 1980 13:15:00 +0000</pubDate>
+      
+      <guid>https://github.com/Chrypapado/Star_Wars/episodes/episode-v/</guid>
+      <description>A small summary behind the first episode, while extracting some funny and useful information that could provide useful to get a better insight for the Star Wars universe.
+The network The network for the first episode consists of 48 nodes, 206 edges while creating 8 communities.
+The degree connections and centrality for the network are the following:
+   Character Degree Connection Degree Centrality     HAN 17 0.</description>
+    </item>
+    
+    <item>
+      <title>Star Wars: Episode IV: A New Hope</title>
+      <link>https://github.com/Chrypapado/Star_Wars/episodes/episode-iv/</link>
+      <pubDate>Wed, 25 May 1977 13:15:00 +0000</pubDate>
+      
+      <guid>https://github.com/Chrypapado/Star_Wars/episodes/episode-iv/</guid>
+      <description>A small summary behind the first episode, while extracting some funny and useful information that could provide useful to get a better insight for the Star Wars universe.
+The network The network for the first episode consists of 61 nodes, 284 edges while creating 13 communities.
+The degree connections and centrality for the network are the following:
+   Character Degree Connection Degree Centrality     LUKE 31 0.</description>
+    </item>
+    
+  </channel>
+</rss>
