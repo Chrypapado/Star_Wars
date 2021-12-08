@@ -2,36 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://github.com/Chrypapado/Star_Wars/scripts/</loc>
+    <loc>https://chrypapado.github.io/Star_Wars/scripts/</loc>
     <lastmod>2021-12-03T16:59:39-04:00</lastmod>
   </url><url>
-    <loc>https://github.com/Chrypapado/Star_Wars/wikia/</loc>
+    <loc>https://chrypapado.github.io/Star_Wars/wikia/</loc>
     <lastmod>2021-12-03T16:59:39-04:00</lastmod>
   </url><url>
-    <loc>https://github.com/Chrypapado/Star_Wars/episodes/</loc>
+    <loc>https://chrypapado.github.io/Star_Wars/episodes/</loc>
     <lastmod>2005-05-15T19:44:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/Chrypapado/Star_Wars/episodes/episode-iii/</loc>
+    <loc>https://chrypapado.github.io/Star_Wars/episodes/episode-iii/</loc>
     <lastmod>2005-05-15T19:44:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/Chrypapado/Star_Wars/</loc>
+    <loc>https://chrypapado.github.io/Star_Wars/</loc>
     <lastmod>2005-05-15T19:44:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/Chrypapado/Star_Wars/episodes/episode-ii/</loc>
+    <loc>https://chrypapado.github.io/Star_Wars/episodes/episode-ii/</loc>
     <lastmod>2002-05-12T19:44:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/Chrypapado/Star_Wars/episodes/episode-i/</loc>
+    <loc>https://chrypapado.github.io/Star_Wars/episodes/episode-i/</loc>
     <lastmod>1999-05-16T23:21:28-04:00</lastmod>
   </url><url>
-    <loc>https://github.com/Chrypapado/Star_Wars/episodes/episode-vi/</loc>
+    <loc>https://chrypapado.github.io/Star_Wars/episodes/episode-vi/</loc>
     <lastmod>1983-05-25T12:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/Chrypapado/Star_Wars/episodes/episode-v/</loc>
+    <loc>https://chrypapado.github.io/Star_Wars/episodes/episode-v/</loc>
     <lastmod>1980-05-06T13:15:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/Chrypapado/Star_Wars/episodes/episode-iv/</loc>
+    <loc>https://chrypapado.github.io/Star_Wars/episodes/episode-iv/</loc>
     <lastmod>1977-05-25T13:15:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/Chrypapado/Star_Wars/tags/</loc>
+    <loc>https://chrypapado.github.io/Star_Wars/categories/</loc>
+  </url><url>
+    <loc>https://chrypapado.github.io/Star_Wars/downloads/</loc>
+  </url><url>
+    <loc>https://chrypapado.github.io/Star_Wars/tags/</loc>
   </url>
 </urlset>

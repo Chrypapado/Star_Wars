@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Star Wars: The Final Project</title>
-    <link>https://github.com/Chrypapado/Star_Wars/tags/</link>
+    <link>https://chrypapado.github.io/Star_Wars/tags/</link>
     <description>Recent content in Tags on Star Wars: The Final Project</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://github.com/Chrypapado/Star_Wars/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://chrypapado.github.io/Star_Wars/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
